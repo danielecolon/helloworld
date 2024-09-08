@@ -18,7 +18,7 @@ namespace helloworld
             {
                 if(ctx.Request.Method.ToLower() == "get")
                 {
-                    await ctx.Response.WriteAsync("Hello, world!");
+                    await ctx.Response.WriteAsync("Hello, world again!");
                 }
             });
         }
