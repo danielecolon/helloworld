@@ -17,7 +17,7 @@ jobs:
           cd src/
           dotnet publish -c Release --output '../published-app'
       - name: 'Deploy to Azure App Service'
-        uses: danielcolon/helloworld@v2
+        uses: danielcolon/helloworld@main
         with:
           app-name: helloworld01845
           publish-profile: ${{ secrets.PUBLISH_PROFILE }}
